@@ -1,6 +1,8 @@
 #include "GeoCalc.hpp"
+#include "ParseXML.hpp"
 
 int main(int argc, char const *argv[]) {
+  ParseXML *_xmlp = new ParseXML("data/20221104_odaigahara.gpx");
   GeoCoordinate _p1, _p2;
   _p1.latitude = 35.384367;
   _p1.longitude = 134.533648;
