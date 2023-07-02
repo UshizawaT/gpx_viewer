@@ -89,7 +89,7 @@ bool GeoCalc::calcTheta() {
   double _tmptheta_ = 0.0, _gFunc_, _hFunc_, _discF_, _gamma_, _zetaprime_,
          _dFunc_, _eFunc_;
   if (!setThetaZero(&_theta0_)) return false;
-  std::cout << "Zone: " << _zoneIndex << std::endl;
+  // std::cout << "Zone: " << _zoneIndex << std::endl;
   const double _stopF_ = 1e-15;
   _tmptheta_ = _theta0_;
   while (true) {
@@ -131,7 +131,7 @@ bool GeoCalc::calcTheta() {
     _tmptheta_ -= _discF_ / (1 - _gFunc_);
   }
   _theta = _tmptheta_;
-  std::cout << "Theta: " << _theta << std::endl;
+  // std::cout << "Theta: " << _theta << std::endl;
   return true;
 }
 
